@@ -10,6 +10,9 @@
 		498C07C62A0A487C000AFD19 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07C52A0A487C000AFD19 /* main.swift */; };
 		498C07CD2A0A491C000AFD19 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07CC2A0A491C000AFD19 /* Utils.swift */; };
 		498C07CF2A0A4942000AFD19 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07CE2A0A4942000AFD19 /* ThreadSafeArray.swift */; };
+		498C07D12A0A49A1000AFD19 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07D02A0A49A1000AFD19 /* InsertionSort.swift */; };
+		498C07D52A0A49D5000AFD19 /* SyncBucketSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07D42A0A49D5000AFD19 /* SyncBucketSort.swift */; };
+		498C07D72A0A4A30000AFD19 /* AsyncBucketSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C07D62A0A4A2F000AFD19 /* AsyncBucketSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		498C07C52A0A487C000AFD19 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		498C07CC2A0A491C000AFD19 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		498C07CE2A0A4942000AFD19 /* ThreadSafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeArray.swift; sourceTree = "<group>"; };
+		498C07D02A0A49A1000AFD19 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		498C07D42A0A49D5000AFD19 /* SyncBucketSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncBucketSort.swift; sourceTree = "<group>"; };
+		498C07D62A0A4A2F000AFD19 /* AsyncBucketSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncBucketSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,29 @@
 			isa = PBXGroup;
 			children = (
 				498C07C52A0A487C000AFD19 /* main.swift */,
+				498C07D32A0A49C3000AFD19 /* Sorting */,
+				498C07D22A0A49B9000AFD19 /* Support files */,
+			);
+			path = BucketSort;
+			sourceTree = "<group>";
+		};
+		498C07D22A0A49B9000AFD19 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
 				498C07CE2A0A4942000AFD19 /* ThreadSafeArray.swift */,
 				498C07CC2A0A491C000AFD19 /* Utils.swift */,
 			);
-			path = BucketSort;
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		498C07D32A0A49C3000AFD19 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				498C07D02A0A49A1000AFD19 /* InsertionSort.swift */,
+				498C07D42A0A49D5000AFD19 /* SyncBucketSort.swift */,
+				498C07D62A0A4A2F000AFD19 /* AsyncBucketSort.swift */,
+			);
+			path = Sorting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498C07D52A0A49D5000AFD19 /* SyncBucketSort.swift in Sources */,
 				498C07C62A0A487C000AFD19 /* main.swift in Sources */,
+				498C07D12A0A49A1000AFD19 /* InsertionSort.swift in Sources */,
 				498C07CF2A0A4942000AFD19 /* ThreadSafeArray.swift in Sources */,
+				498C07D72A0A4A30000AFD19 /* AsyncBucketSort.swift in Sources */,
 				498C07CD2A0A491C000AFD19 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
