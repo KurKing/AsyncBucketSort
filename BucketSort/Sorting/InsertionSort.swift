@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Array where Element: AdditiveArithmetic & Comparable {
+extension Array where Element: Comparable {
     
     func insertionSort() -> [Element] {
         
